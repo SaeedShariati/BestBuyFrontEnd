@@ -9,6 +9,10 @@ body,html{
 *{
   box-sizing: border-box;
 }
+.main-content{
+  display: block;
+  margin-right: 100px;
+}
 ul{
   list-style-type: none;
   margin:0;

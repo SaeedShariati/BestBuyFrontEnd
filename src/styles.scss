@@ -1,1 +1,64 @@
-/* You can add global styles to this file, and also import other style files */
+$white-color: #F7F5F2;
+$pink-color: #F56D91;
+$gray-color:#8D8DAA;
+$cream-color:#DFDFDE;
+
+body,html{
+  margin:0px;
+}
+*{
+  box-sizing: border-box;
+}
+.bg-white{
+  background-color: $white-color;
+  color: black;
+}
+.bg-cream{
+  background-color: $cream-color;
+}
+.bg-gray{
+  background-color: $gray-color;
+  color: $white-color;
+}
+.bg-pink{
+  background-color: $cream-color;
+  color: $white-color;
+}
+.m-1{
+  margin:5px;
+}
+.p-1{
+  padding:5px;
+}
+.btn{
+  background-color: $white-color;
+  cursor: pointer;
+  padding:0;
+  display: inline-block;
+  border:none;
+}
+.btn:hover{
+  transition: ease-in 150ms;
+  background-color: $pink-color;
+  color: $white-color;
+}
+//small devices
+@media only screen and (max-width: 600px) {
+  .sm-hide{
+    display: none !important;
+  }
+}
+.bar{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  padding: 0px;
+  margin: 0px;
+  height: 35px;
+  .bar-item{
+    display: block;
+    padding: 10px;
+    height: 100%;
+  }
+}

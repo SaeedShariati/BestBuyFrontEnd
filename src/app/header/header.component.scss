@@ -1,0 +1,35 @@
+header{
+  z-index: 8;
+}
+div.search-bar{
+  height: 100%;
+
+}
+input{
+  height: 100%;
+  padding: 0px 5px 0px 5px;
+}
+.btn{
+  height: 100%;
+  width: 25px;
+  border-color: #000;
+  border-width: 1px 1px 1px 0px;
+  border-style: solid;
+}
+header{
+  margin: 0 0 10px 0;
+  position:sticky;
+  .logo{
+    position: absolute;
+    left:10px;
+  }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+@media only screen and (min-width: 600px) {
+
+
+}

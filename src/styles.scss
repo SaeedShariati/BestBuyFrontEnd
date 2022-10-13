@@ -85,12 +85,4 @@ ul{
     width: 100%;
   }
 }
-.tile{ //doesn't work in the component, because the elements are generated seperately
-  background-color: #F56D91;
- }
- .tiles{
-  height: 200px;
-  display: grid;
-  grid-template-columns: repeat(var(--columns),1fr);
-  grid-template-rows: repeat(var(--rows),1fr);
-}
+

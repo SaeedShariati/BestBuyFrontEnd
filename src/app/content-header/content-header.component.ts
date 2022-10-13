@@ -1,9 +1,10 @@
-import { Component, OnInit, OnDestroy,Input } from '@angular/core';
+import { Component, OnInit, OnDestroy,Input, ViewEncapsulation } from '@angular/core';
 import * as anime from 'src/assets/js/lib/anime.min.js';
 @Component({
   selector: 'app-content-header',
   templateUrl: './content-header.component.html',
-  styleUrls: ['./content-header.component.scss']
+  styleUrls: ['./content-header.component.scss'],
+  encapsulation:ViewEncapsulation.None
 })
 export class ContentHeaderComponent implements OnInit,OnDestroy {
   @Input() tileLength:Number = 50;

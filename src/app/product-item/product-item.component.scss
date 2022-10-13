@@ -1,0 +1,7 @@
+@import '../shared/variables';
+:host{
+  border: 1px black solid;
+  margin:10px;
+  min-height: 200px;
+  flex-grow: 1;
+}

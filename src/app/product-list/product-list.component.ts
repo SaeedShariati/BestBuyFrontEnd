@@ -1,6 +1,6 @@
 import { ProductService } from './../product.service';
 import { Product } from './../shared/product.model';
-import { Component, OnInit } from '@angular/core';
+import { Component, HostBinding, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-product-list',

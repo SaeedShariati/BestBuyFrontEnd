@@ -6,7 +6,6 @@ import { Component, OnInit,HostBinding } from '@angular/core';
   styleUrls: ['./content.component.scss']
 })
 export class ContentComponent implements OnInit {
-  @HostBinding('attr.class') cssClass = 'main-content';
   constructor() { }
 
   ngOnInit(): void {

@@ -2,3 +2,15 @@ $white-color: #F7F5F2;
 $pink-color: #F56D91;
 $gray-color:#8D8DAA;
 $cream-color:#DFDFDE;
+@mixin center{
+  width: 100%;
+  transform: translateY(-50%);
+  top:50%;
+  text-align: center;
+}
+@mixin user-select($value){
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}

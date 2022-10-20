@@ -1,8 +1,4 @@
-$white-color: #F7F5F2;
-$pink-color: #F56D91;
-$gray-color:#8D8DAA;
-$cream-color:#DFDFDE;
-
+@import '../src/app/shared/variables';
 body,html{
   margin:0px;
 }
@@ -34,6 +30,14 @@ ul{
 }
 .bg-pink{
   background-color: $pink-color;
+  color: $white-color;
+}
+.bg-dblue{
+  background-color: $dblue-color;
+  color: $white-color;
+}
+.bg-lblue{
+  background-color: $lblue-color;
   color: $white-color;
 }
 .m-1{

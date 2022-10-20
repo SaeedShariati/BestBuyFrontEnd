@@ -18,16 +18,20 @@ nav.main-nav div.nav-item{
   text-align: center;
   width:100%;
   height: $navigation-width;
-  transition:ease-out opacity 1s;
   i{
+    transition:ease-out opacity 1s;
     position: relative;
     top:50%;
     transform: translateY(-50%);
     color: $white-color;
   }
   &:hover{
+    i{
+
+      opacity: 0.3;
+    }
     cursor: pointer;
-    opacity: 0.3;
+    border: 1px solid $white-color;
   }
 }
 

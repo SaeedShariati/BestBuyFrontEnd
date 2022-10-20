@@ -1,7 +1,32 @@
 @import '../shared/variables';
 :host{
-  border: 1px black solid;
   margin:10px;
-  min-height: 200px;
   flex-grow: 1;
+  min-height: 200px;
+  min-width: 300px;
+}
+.product-item{
+  position: relative;
+  background-color: $white-color;
+  border: 1px black solid;
+
+  height: 100%;
+  position: relative;
+  .header{
+    height: 40px;
+    font-size: 1.5em;
+  }
+  .product-content{
+    position: relative;
+    height: auto;
+    img{
+      margin: 0 10px 10px 0;
+      float: left;
+      width:100px;
+      height: 100px;
+    }
+    p{
+      padding: 10px;
+    }
+  }
 }

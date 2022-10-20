@@ -16,22 +16,18 @@ $header-height:40px;
     height: 40px;
     font-size: 1.5em;
   }
-  .product-profile{
+  .product-content{
     img{
       margin: 0 10px 0px 0;
       float: left;
       width:100px;
       height: 100px;
     }
-  }
-  .product-content{
     word-wrap: break-word;
+    overflow-wrap: break-word;
     overflow: scroll;
     padding: 10px;
     height: calc(100% - $header-height);
-    p{
-      display: inline;
-    }
   }
 }
 /* ===== Scrollbar CSS ===== */

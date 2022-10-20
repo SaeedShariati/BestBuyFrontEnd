@@ -1,32 +1,57 @@
 @import '../shared/variables';
+$header-height:40px;
 :host{
   margin:10px;
   flex-grow: 1;
   min-height: 200px;
-  min-width: 300px;
+  min-width: 200px;
 }
 .product-item{
+  max-height: 300px;
   position: relative;
   background-color: $white-color;
   border: 1px black solid;
-
   height: 100%;
-  position: relative;
   .header{
     height: 40px;
     font-size: 1.5em;
   }
-  .product-content{
-    position: relative;
-    height: auto;
+  .product-profile{
     img{
-      margin: 0 10px 10px 0;
+      margin: 0 10px 0px 0;
       float: left;
       width:100px;
       height: 100px;
     }
+  }
+  .product-content{
+    word-wrap: break-word;
+    overflow: scroll;
+    padding: 10px;
+    height: calc(100% - $header-height);
     p{
-      padding: 10px;
+      display: inline;
     }
   }
 }
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  .product-content{
+    scrollbar-width: auto;
+    scrollbar-color: #ffffff #7079d3;
+  }
+
+  /* Chrome, Edge, and Safari */
+  .product-content::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  .product-content::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  .product-content::-webkit-scrollbar-thumb {
+    background-color: #7079d3;
+    border-radius: 7px;
+    border: 3px solid #ffffff;
+  }

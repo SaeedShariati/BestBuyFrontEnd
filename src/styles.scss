@@ -7,11 +7,6 @@ body,html{
   margin:0;
   padding:0;
 }
-main{
-  position: relative;
-  display: block;
-  margin-right: 100px;
-}
 ul{
   list-style-type: none;
   margin:0;
@@ -39,6 +34,9 @@ ul{
 .bg-lblue{
   background-color: $lblue-color;
   color: $white-color;
+}
+.text-white{
+  color:$white-color;
 }
 .m-1{
   margin:5px;

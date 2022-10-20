@@ -1,12 +1,33 @@
+@import '../shared/variables';
 nav.main-nav{
   position: fixed;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  width: 100px;
+  justify-content: flex-start;
+  align-items: center;
+  width: $navigation-width;
   right: 0;
   top: 0;
-  background-color: #000;
+  background-color: $ldark-color;
   z-index: 0;
+
 }
+nav.main-nav div.nav-item{
+  position: relative;
+  text-align: center;
+  width:100%;
+  height: $navigation-width;
+  transition:ease-out opacity 1s;
+  i{
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+    color: $white-color;
+  }
+  &:hover{
+    cursor: pointer;
+    opacity: 0.3;
+  }
+}
+

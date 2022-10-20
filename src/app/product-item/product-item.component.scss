@@ -35,7 +35,7 @@ $header-height:40px;
   /* Firefox */
   .product-content{
     scrollbar-width: auto;
-    scrollbar-color: #ffffff #7079d3;
+    scrollbar-color: $white-color $lblue-color;
   }
 
   /* Chrome, Edge, and Safari */
@@ -44,11 +44,11 @@ $header-height:40px;
   }
 
   .product-content::-webkit-scrollbar-track {
-    background: #ffffff;
+    background: $white-color;
   }
 
   .product-content::-webkit-scrollbar-thumb {
-    background-color: #7079d3;
+    background-color: $lblue-color;
     border-radius: 7px;
-    border: 3px solid #ffffff;
+    border: 3px solid $white-color;
   }
